@@ -1,0 +1,15 @@
+[
+    {
+        "airlineId": "WA",
+        "flightNumber": 1333,
+        "departureAirportId": "AMS",
+        "arrivalAirportId": "AAL"
+    },
+    {
+        "airlineId": "HV",
+        "flightNumber": 553,
+        "departureAirportId": "AMS",
+        "arrivalAirportId": "RTM"
+    }
+]
+

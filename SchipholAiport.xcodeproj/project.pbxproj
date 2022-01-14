@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C5A4C8E2741C13500F90386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4C8D2741C13500F90386 /* AppDelegate.swift */; };
+		4C5A4C972741C13800F90386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5A4C962741C13800F90386 /* Assets.xcassets */; };
+		4C5A4C9A2741C13800F90386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5A4C982741C13800F90386 /* LaunchScreen.storyboard */; };
+		4C5A4CB12741C13800F90386 /* SchipholAiportUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CB02741C13800F90386 /* SchipholAiportUITestsLaunchTests.swift */; };
+		4C5A4CC92741C36300F90386 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CC82741C36300F90386 /* Airport.swift */; };
+		4C5A4CCB2741C39C00F90386 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CCA2741C39C00F90386 /* Flight.swift */; };
+		4C5A4CCD2741C3B400F90386 /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CCC2741C3B400F90386 /* SettingsSection.swift */; };
+		4C5A4CD12741C3EA00F90386 /* AirportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CD02741C3EA00F90386 /* AirportsViewModel.swift */; };
+		4C5A4CD32741C5E800F90386 /* AirportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CD22741C5E800F90386 /* AirportViewModel.swift */; };
+		4C5A4CD52741C63000F90386 /* ReachableAirportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CD42741C63000F90386 /* ReachableAirportsViewModel.swift */; };
+		4C5A4CD72741C71B00F90386 /* ReachableAirportCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CD62741C71B00F90386 /* ReachableAirportCellViewModel.swift */; };
+		4C5A4CD92741C75200F90386 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CD82741C75200F90386 /* SettingsViewModel.swift */; };
+		4C5A4CE02741C81A00F90386 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CDF2741C81A00F90386 /* BaseViewController.swift */; };
+		4C5A4CE22741C83400F90386 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CE12741C83400F90386 /* TabBarController.swift */; };
+		4C5A4CE42741C86B00F90386 /* AirportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CE32741C86B00F90386 /* AirportsViewController.swift */; };
+		4C5A4CE62741C8BA00F90386 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CE52741C8BA00F90386 /* ItemView.swift */; };
+		4C5A4CE82741C8F200F90386 /* AiportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CE72741C8F200F90386 /* AiportViewController.swift */; };
+		4C5A4CEA2741C91A00F90386 /* ReachableAirportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CE92741C91A00F90386 /* ReachableAirportsViewController.swift */; };
+		4C5A4CEC2741C94900F90386 /* ReachableAirportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CEB2741C94900F90386 /* ReachableAirportCell.swift */; };
+		4C5A4CEE2741C97500F90386 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CED2741C97500F90386 /* SettingsViewController.swift */; };
+		4C5A4CF02741C9A200F90386 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CEF2741C9A200F90386 /* SettingCell.swift */; };
+		4C5A4CF32741CA4300F90386 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CF22741CA4300F90386 /* AppDefaults.swift */; };
+		4C5A4CF62741CA7B00F90386 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CF52741CA7B00F90386 /* Extensions.swift */; };
+		4C5A4CF82741CB4100F90386 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CF72741CB4100F90386 /* Extension+UIColor.swift */; };
+		4C5A4CFA2741CB7400F90386 /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CF92741CB7300F90386 /* UIView+Anchor.swift */; };
+		4C5A4CFC2741CBA200F90386 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CFB2741CBA200F90386 /* TabBarItem.swift */; };
+		4C5A4CFE2741CBD500F90386 /* AssetIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CFD2741CBD500F90386 /* AssetIdentifier.swift */; };
+		4C5A4D002741CC1400F90386 /* DistanceMeasures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4CFF2741CC1400F90386 /* DistanceMeasures.swift */; };
+		4C5A4D022741CCC000F90386 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D012741CCC000F90386 /* Router.swift */; };
+		4C5A4D042741CD5200F90386 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D032741CD5200F90386 /* APIService.swift */; };
+		4C5A4D062741CD7A00F90386 /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D052741CD7A00F90386 /* ErrorService.swift */; };
+		4C5A4D0A2741D09600F90386 /* Airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C5A4D092741D09600F90386 /* Airports.json */; };
+		4C5A4D0C2741D0C300F90386 /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C5A4D0B2741D0C300F90386 /* Flights.json */; };
+		4C5A4D0E2741D0F600F90386 /* AirportsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D0D2741D0F600F90386 /* AirportsViewModelTest.swift */; };
+		4C5A4D102741D13C00F90386 /* ReachableAirportsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D0F2741D13C00F90386 /* ReachableAirportsViewModelTest.swift */; };
+		4C5A4D122741D16900F90386 /* SettingsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D112741D16900F90386 /* SettingsViewModelTest.swift */; };
+		4C5A4D142741D1BE00F90386 /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D132741D1BE00F90386 /* RouterTest.swift */; };
+		4C5A4D162741D1EC00F90386 /* APIServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D152741D1EC00F90386 /* APIServiceTest.swift */; };
+		4C5A4D182741D24300F90386 /* ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D172741D24300F90386 /* ExtensionsTest.swift */; };
+		4C5A4D1A2741D28F00F90386 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D192741D28F00F90386 /* TestConstants.swift */; };
+		4C5A4D1C2741D30100F90386 /* AirportsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D1B2741D30100F90386 /* AirportsViewControllerTest.swift */; };
+		4C5A4D1E2741D34500F90386 /* ReachableAirportsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D1D2741D34500F90386 /* ReachableAirportsViewControllerTest.swift */; };
+		4C5A4D202741D37200F90386 /* SettingsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D1F2741D37200F90386 /* SettingsViewControllerTest.swift */; };
+		4C5A4D222741D44800F90386 /* AirportsViewControllerUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D212741D44800F90386 /* AirportsViewControllerUITest.swift */; };
+		4C5A4D242741D46300F90386 /* SettingsViewControllerUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D232741D46300F90386 /* SettingsViewControllerUITest.swift */; };
+		4C5A4D282741E71D00F90386 /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A4D272741E71D00F90386 /* SettingsHeaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C5A4CA12741C13800F90386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C5A4C822741C13500F90386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C5A4C892741C13500F90386;
+			remoteInfo = SchipholAiport;
+		};
+		4C5A4CAB2741C13800F90386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C5A4C822741C13500F90386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C5A4C892741C13500F90386;
+			remoteInfo = SchipholAiport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C5A4C8A2741C13500F90386 /* SchipholAiport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchipholAiport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5A4C8D2741C13500F90386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C5A4C962741C13800F90386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C5A4C992741C13800F90386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C5A4C9B2741C13800F90386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5A4CA02741C13800F90386 /* SchipholAiportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchipholAiportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5A4CAA2741C13800F90386 /* SchipholAiportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchipholAiportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5A4CB02741C13800F90386 /* SchipholAiportUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchipholAiportUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C5A4CC82741C36300F90386 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		4C5A4CCA2741C39C00F90386 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		4C5A4CCC2741C3B400F90386 /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
+		4C5A4CD02741C3EA00F90386 /* AirportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsViewModel.swift; sourceTree = "<group>"; };
+		4C5A4CD22741C5E800F90386 /* AirportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportViewModel.swift; sourceTree = "<group>"; };
+		4C5A4CD42741C63000F90386 /* ReachableAirportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachableAirportsViewModel.swift; sourceTree = "<group>"; };
+		4C5A4CD62741C71B00F90386 /* ReachableAirportCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachableAirportCellViewModel.swift; sourceTree = "<group>"; };
+		4C5A4CD82741C75200F90386 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		4C5A4CDF2741C81A00F90386 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4C5A4CE12741C83400F90386 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4C5A4CE32741C86B00F90386 /* AirportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsViewController.swift; sourceTree = "<group>"; };
+		4C5A4CE52741C8BA00F90386 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		4C5A4CE72741C8F200F90386 /* AiportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiportViewController.swift; sourceTree = "<group>"; };
+		4C5A4CE92741C91A00F90386 /* ReachableAirportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachableAirportsViewController.swift; sourceTree = "<group>"; };
+		4C5A4CEB2741C94900F90386 /* ReachableAirportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachableAirportCell.swift; sourceTree = "<group>"; };
+		4C5A4CED2741C97500F90386 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4C5A4CEF2741C9A200F90386 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		4C5A4CF22741CA4300F90386 /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
+		4C5A4CF52741CA7B00F90386 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4C5A4CF72741CB4100F90386 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		4C5A4CF92741CB7300F90386 /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
+		4C5A4CFB2741CBA200F90386 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		4C5A4CFD2741CBD500F90386 /* AssetIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetIdentifier.swift; sourceTree = "<group>"; };
+		4C5A4CFF2741CC1400F90386 /* DistanceMeasures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceMeasures.swift; sourceTree = "<group>"; };
+		4C5A4D012741CCC000F90386 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4C5A4D032741CD5200F90386 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4C5A4D052741CD7A00F90386 /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
+		4C5A4D092741D09600F90386 /* Airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Airports.json; sourceTree = "<group>"; };
+		4C5A4D0B2741D0C300F90386 /* Flights.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Flights.json; sourceTree = "<group>"; };
+		4C5A4D0D2741D0F600F90386 /* AirportsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsViewModelTest.swift; sourceTree = "<group>"; };
+		4C5A4D0F2741D13C00F90386 /* ReachableAirportsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachableAirportsViewModelTest.swift; sourceTree = "<group>"; };
+		4C5A4D112741D16900F90386 /* SettingsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTest.swift; sourceTree = "<group>"; };
+		4C5A4D132741D1BE00F90386 /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
+		4C5A4D152741D1EC00F90386 /* APIServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTest.swift; sourceTree = "<group>"; };
+		4C5A4D172741D24300F90386 /* ExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTest.swift; sourceTree = "<group>"; };
+		4C5A4D192741D28F00F90386 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		4C5A4D1B2741D30100F90386 /* AirportsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsViewControllerTest.swift; sourceTree = "<group>"; };
+		4C5A4D1D2741D34500F90386 /* ReachableAirportsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachableAirportsViewControllerTest.swift; sourceTree = "<group>"; };
+		4C5A4D1F2741D37200F90386 /* SettingsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerTest.swift; sourceTree = "<group>"; };
+		4C5A4D212741D44800F90386 /* AirportsViewControllerUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsViewControllerUITest.swift; sourceTree = "<group>"; };
+		4C5A4D232741D46300F90386 /* SettingsViewControllerUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerUITest.swift; sourceTree = "<group>"; };
+		4C5A4D272741E71D00F90386 /* SettingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C5A4C872741C13500F90386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A4C9D2741C13800F90386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A4CA72741C13800F90386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C5A4C812741C13500F90386 = {
+			isa = PBXGroup;
+			children = (
+				4C5A4C8C2741C13500F90386 /* SchipholAiport */,
+				4C5A4CA32741C13800F90386 /* SchipholAiportTests */,
+				4C5A4CAD2741C13800F90386 /* SchipholAiportUITests */,
+				4C5A4C8B2741C13500F90386 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C5A4C8B2741C13500F90386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4C8A2741C13500F90386 /* SchipholAiport.app */,
+				4C5A4CA02741C13800F90386 /* SchipholAiportTests.xctest */,
+				4C5A4CAA2741C13800F90386 /* SchipholAiportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C5A4C8C2741C13500F90386 /* SchipholAiport */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CBD2741C27D00F90386 /* Models */,
+				4C5A4CBE2741C28A00F90386 /* ViewModels */,
+				4C5A4CBF2741C29B00F90386 /* UI */,
+				4C5A4CC02741C2B700F90386 /* Utils */,
+				4C5A4CC12741C2C600F90386 /* Services */,
+				4C5A4CC22741C2D800F90386 /* System files */,
+			);
+			path = SchipholAiport;
+			sourceTree = "<group>";
+		};
+		4C5A4CA32741C13800F90386 /* SchipholAiportTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CC32741C2FB00F90386 /* JSON */,
+				4C5A4CC42741C30700F90386 /* ViewModel */,
+				4C5A4CC52741C31400F90386 /* Services */,
+				4C5A4CC62741C32100F90386 /* Utils */,
+				4C5A4CC72741C33800F90386 /* UI */,
+			);
+			path = SchipholAiportTests;
+			sourceTree = "<group>";
+		};
+		4C5A4CAD2741C13800F90386 /* SchipholAiportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CB02741C13800F90386 /* SchipholAiportUITestsLaunchTests.swift */,
+				4C5A4D232741D46300F90386 /* SettingsViewControllerUITest.swift */,
+				4C5A4D212741D44800F90386 /* AirportsViewControllerUITest.swift */,
+			);
+			path = SchipholAiportUITests;
+			sourceTree = "<group>";
+		};
+		4C5A4CBD2741C27D00F90386 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CC82741C36300F90386 /* Airport.swift */,
+				4C5A4CCA2741C39C00F90386 /* Flight.swift */,
+				4C5A4CCC2741C3B400F90386 /* SettingsSection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C5A4CBE2741C28A00F90386 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CD02741C3EA00F90386 /* AirportsViewModel.swift */,
+				4C5A4CD22741C5E800F90386 /* AirportViewModel.swift */,
+				4C5A4CD42741C63000F90386 /* ReachableAirportsViewModel.swift */,
+				4C5A4CD62741C71B00F90386 /* ReachableAirportCellViewModel.swift */,
+				4C5A4CD82741C75200F90386 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4C5A4CBF2741C29B00F90386 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CDA2741C78400F90386 /* Common */,
+				4C5A4CDB2741C78F00F90386 /* Airports */,
+				4C5A4CDC2741C7A100F90386 /* Airport Detail */,
+				4C5A4CDD2741C7CC00F90386 /* Reachable Airports */,
+				4C5A4CDE2741C7E600F90386 /* Settings */,
+				4C5A4C982741C13800F90386 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4C5A4CC02741C2B700F90386 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CF12741CA3300F90386 /* Extensions */,
+				4C5A4CF42741CA6700F90386 /* Enums */,
+				4C5A4CF22741CA4300F90386 /* AppDefaults.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4C5A4CC12741C2C600F90386 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4D012741CCC000F90386 /* Router.swift */,
+				4C5A4D032741CD5200F90386 /* APIService.swift */,
+				4C5A4D052741CD7A00F90386 /* ErrorService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4C5A4CC22741C2D800F90386 /* System files */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4C8D2741C13500F90386 /* AppDelegate.swift */,
+				4C5A4C962741C13800F90386 /* Assets.xcassets */,
+				4C5A4C9B2741C13800F90386 /* Info.plist */,
+			);
+			path = "System files";
+			sourceTree = "<group>";
+		};
+		4C5A4CC32741C2FB00F90386 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4D092741D09600F90386 /* Airports.json */,
+				4C5A4D0B2741D0C300F90386 /* Flights.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		4C5A4CC42741C30700F90386 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4D0D2741D0F600F90386 /* AirportsViewModelTest.swift */,
+				4C5A4D0F2741D13C00F90386 /* ReachableAirportsViewModelTest.swift */,
+				4C5A4D112741D16900F90386 /* SettingsViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C5A4CC52741C31400F90386 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4D132741D1BE00F90386 /* RouterTest.swift */,
+				4C5A4D152741D1EC00F90386 /* APIServiceTest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4C5A4CC62741C32100F90386 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4D172741D24300F90386 /* ExtensionsTest.swift */,
+				4C5A4D192741D28F00F90386 /* TestConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4C5A4CC72741C33800F90386 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4D1B2741D30100F90386 /* AirportsViewControllerTest.swift */,
+				4C5A4D1D2741D34500F90386 /* ReachableAirportsViewControllerTest.swift */,
+				4C5A4D1F2741D37200F90386 /* SettingsViewControllerTest.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4C5A4CDA2741C78400F90386 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CDF2741C81A00F90386 /* BaseViewController.swift */,
+				4C5A4CE12741C83400F90386 /* TabBarController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4C5A4CDB2741C78F00F90386 /* Airports */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CE32741C86B00F90386 /* AirportsViewController.swift */,
+			);
+			path = Airports;
+			sourceTree = "<group>";
+		};
+		4C5A4CDC2741C7A100F90386 /* Airport Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CE52741C8BA00F90386 /* ItemView.swift */,
+				4C5A4CE72741C8F200F90386 /* AiportViewController.swift */,
+			);
+			path = "Airport Detail";
+			sourceTree = "<group>";
+		};
+		4C5A4CDD2741C7CC00F90386 /* Reachable Airports */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CE92741C91A00F90386 /* ReachableAirportsViewController.swift */,
+				4C5A4CEB2741C94900F90386 /* ReachableAirportCell.swift */,
+			);
+			path = "Reachable Airports";
+			sourceTree = "<group>";
+		};
+		4C5A4CDE2741C7E600F90386 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CED2741C97500F90386 /* SettingsViewController.swift */,
+				4C5A4D272741E71D00F90386 /* SettingsHeaderView.swift */,
+				4C5A4CEF2741C9A200F90386 /* SettingCell.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4C5A4CF12741CA3300F90386 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CF52741CA7B00F90386 /* Extensions.swift */,
+				4C5A4CF72741CB4100F90386 /* Extension+UIColor.swift */,
+				4C5A4CF92741CB7300F90386 /* UIView+Anchor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4C5A4CF42741CA6700F90386 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A4CFB2741CBA200F90386 /* TabBarItem.swift */,
+				4C5A4CFD2741CBD500F90386 /* AssetIdentifier.swift */,
+				4C5A4CFF2741CC1400F90386 /* DistanceMeasures.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C5A4C892741C13500F90386 /* SchipholAiport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5A4CB42741C13800F90386 /* Build configuration list for PBXNativeTarget "SchipholAiport" */;
+			buildPhases = (
+				4C5A4C862741C13500F90386 /* Sources */,
+				4C5A4C872741C13500F90386 /* Frameworks */,
+				4C5A4C882741C13500F90386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchipholAiport;
+			productName = SchipholAiport;
+			productReference = 4C5A4C8A2741C13500F90386 /* SchipholAiport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C5A4C9F2741C13800F90386 /* SchipholAiportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5A4CB72741C13800F90386 /* Build configuration list for PBXNativeTarget "SchipholAiportTests" */;
+			buildPhases = (
+				4C5A4C9C2741C13800F90386 /* Sources */,
+				4C5A4C9D2741C13800F90386 /* Frameworks */,
+				4C5A4C9E2741C13800F90386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C5A4CA22741C13800F90386 /* PBXTargetDependency */,
+			);
+			name = SchipholAiportTests;
+			productName = SchipholAiportTests;
+			productReference = 4C5A4CA02741C13800F90386 /* SchipholAiportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C5A4CA92741C13800F90386 /* SchipholAiportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5A4CBA2741C13800F90386 /* Build configuration list for PBXNativeTarget "SchipholAiportUITests" */;
+			buildPhases = (
+				4C5A4CA62741C13800F90386 /* Sources */,
+				4C5A4CA72741C13800F90386 /* Frameworks */,
+				4C5A4CA82741C13800F90386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C5A4CAC2741C13800F90386 /* PBXTargetDependency */,
+			);
+			name = SchipholAiportUITests;
+			productName = SchipholAiportUITests;
+			productReference = 4C5A4CAA2741C13800F90386 /* SchipholAiportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C5A4C822741C13500F90386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					4C5A4C892741C13500F90386 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					4C5A4C9F2741C13800F90386 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 4C5A4C892741C13500F90386;
+					};
+					4C5A4CA92741C13800F90386 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 4C5A4C892741C13500F90386;
+					};
+				};
+			};
+			buildConfigurationList = 4C5A4C852741C13500F90386 /* Build configuration list for PBXProject "SchipholAiport" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C5A4C812741C13500F90386;
+			productRefGroup = 4C5A4C8B2741C13500F90386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C5A4C892741C13500F90386 /* SchipholAiport */,
+				4C5A4C9F2741C13800F90386 /* SchipholAiportTests */,
+				4C5A4CA92741C13800F90386 /* SchipholAiportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C5A4C882741C13500F90386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5A4C9A2741C13800F90386 /* LaunchScreen.storyboard in Resources */,
+				4C5A4C972741C13800F90386 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A4C9E2741C13800F90386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5A4D0A2741D09600F90386 /* Airports.json in Resources */,
+				4C5A4D0C2741D0C300F90386 /* Flights.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A4CA82741C13800F90386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C5A4C862741C13500F90386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5A4CF62741CA7B00F90386 /* Extensions.swift in Sources */,
+				4C5A4CE02741C81A00F90386 /* BaseViewController.swift in Sources */,
+				4C5A4CCD2741C3B400F90386 /* SettingsSection.swift in Sources */,
+				4C5A4CEE2741C97500F90386 /* SettingsViewController.swift in Sources */,
+				4C5A4CE62741C8BA00F90386 /* ItemView.swift in Sources */,
+				4C5A4CD12741C3EA00F90386 /* AirportsViewModel.swift in Sources */,
+				4C5A4CE42741C86B00F90386 /* AirportsViewController.swift in Sources */,
+				4C5A4CE82741C8F200F90386 /* AiportViewController.swift in Sources */,
+				4C5A4CEC2741C94900F90386 /* ReachableAirportCell.swift in Sources */,
+				4C5A4CC92741C36300F90386 /* Airport.swift in Sources */,
+				4C5A4CD52741C63000F90386 /* ReachableAirportsViewModel.swift in Sources */,
+				4C5A4CF02741C9A200F90386 /* SettingCell.swift in Sources */,
+				4C5A4D282741E71D00F90386 /* SettingsHeaderView.swift in Sources */,
+				4C5A4D062741CD7A00F90386 /* ErrorService.swift in Sources */,
+				4C5A4CD72741C71B00F90386 /* ReachableAirportCellViewModel.swift in Sources */,
+				4C5A4C8E2741C13500F90386 /* AppDelegate.swift in Sources */,
+				4C5A4CD32741C5E800F90386 /* AirportViewModel.swift in Sources */,
+				4C5A4D042741CD5200F90386 /* APIService.swift in Sources */,
+				4C5A4CEA2741C91A00F90386 /* ReachableAirportsViewController.swift in Sources */,
+				4C5A4CF32741CA4300F90386 /* AppDefaults.swift in Sources */,
+				4C5A4CFA2741CB7400F90386 /* UIView+Anchor.swift in Sources */,
+				4C5A4CCB2741C39C00F90386 /* Flight.swift in Sources */,
+				4C5A4D022741CCC000F90386 /* Router.swift in Sources */,
+				4C5A4D002741CC1400F90386 /* DistanceMeasures.swift in Sources */,
+				4C5A4CE22741C83400F90386 /* TabBarController.swift in Sources */,
+				4C5A4CFC2741CBA200F90386 /* TabBarItem.swift in Sources */,
+				4C5A4CFE2741CBD500F90386 /* AssetIdentifier.swift in Sources */,
+				4C5A4CD92741C75200F90386 /* SettingsViewModel.swift in Sources */,
+				4C5A4CF82741CB4100F90386 /* Extension+UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A4C9C2741C13800F90386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5A4D162741D1EC00F90386 /* APIServiceTest.swift in Sources */,
+				4C5A4D0E2741D0F600F90386 /* AirportsViewModelTest.swift in Sources */,
+				4C5A4D1E2741D34500F90386 /* ReachableAirportsViewControllerTest.swift in Sources */,
+				4C5A4D182741D24300F90386 /* ExtensionsTest.swift in Sources */,
+				4C5A4D1A2741D28F00F90386 /* TestConstants.swift in Sources */,
+				4C5A4D1C2741D30100F90386 /* AirportsViewControllerTest.swift in Sources */,
+				4C5A4D102741D13C00F90386 /* ReachableAirportsViewModelTest.swift in Sources */,
+				4C5A4D202741D37200F90386 /* SettingsViewControllerTest.swift in Sources */,
+				4C5A4D142741D1BE00F90386 /* RouterTest.swift in Sources */,
+				4C5A4D122741D16900F90386 /* SettingsViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A4CA62741C13800F90386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5A4CB12741C13800F90386 /* SchipholAiportUITestsLaunchTests.swift in Sources */,
+				4C5A4D222741D44800F90386 /* AirportsViewControllerUITest.swift in Sources */,
+				4C5A4D242741D46300F90386 /* SettingsViewControllerUITest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C5A4CA22741C13800F90386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C5A4C892741C13500F90386 /* SchipholAiport */;
+			targetProxy = 4C5A4CA12741C13800F90386 /* PBXContainerItemProxy */;
+		};
+		4C5A4CAC2741C13800F90386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C5A4C892741C13500F90386 /* SchipholAiport */;
+			targetProxy = 4C5A4CAB2741C13800F90386 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C5A4C982741C13800F90386 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5A4C992741C13800F90386 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C5A4CB22741C13800F90386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C5A4CB32741C13800F90386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C5A4CB52741C13800F90386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JE4QC5797R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SchipholAiport/System files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zibeyda.SchipholAiport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4C5A4CB62741C13800F90386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JE4QC5797R;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SchipholAiport/System files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zibeyda.SchipholAiport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4C5A4CB82741C13800F90386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JE4QC5797R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zibeyda.SchipholAiportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SchipholAiport.app/SchipholAiport";
+			};
+			name = Debug;
+		};
+		4C5A4CB92741C13800F90386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JE4QC5797R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zibeyda.SchipholAiportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SchipholAiport.app/SchipholAiport";
+			};
+			name = Release;
+		};
+		4C5A4CBB2741C13800F90386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JE4QC5797R;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zibeyda.SchipholAiportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SchipholAiport;
+			};
+			name = Debug;
+		};
+		4C5A4CBC2741C13800F90386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JE4QC5797R;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zibeyda.SchipholAiportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SchipholAiport;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C5A4C852741C13500F90386 /* Build configuration list for PBXProject "SchipholAiport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5A4CB22741C13800F90386 /* Debug */,
+				4C5A4CB32741C13800F90386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C5A4CB42741C13800F90386 /* Build configuration list for PBXNativeTarget "SchipholAiport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5A4CB52741C13800F90386 /* Debug */,
+				4C5A4CB62741C13800F90386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C5A4CB72741C13800F90386 /* Build configuration list for PBXNativeTarget "SchipholAiportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5A4CB82741C13800F90386 /* Debug */,
+				4C5A4CB92741C13800F90386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C5A4CBA2741C13800F90386 /* Build configuration list for PBXNativeTarget "SchipholAiportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5A4CBB2741C13800F90386 /* Debug */,
+				4C5A4CBC2741C13800F90386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C5A4C822741C13500F90386 /* Project object */;
+}
